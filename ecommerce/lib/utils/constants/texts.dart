@@ -20,7 +20,7 @@ class ETexts {
   // Authentication form text
   static const String firstName = 'First Name';
   static const String lastName = 'Last Name';
-  static const String email = 'Email';
+  static const String email = 'E-Mail';
   static const String password = 'Password';
   static const String confirmPassword = 'Confirm Password';
   static const String newPassword = 'New Password';
@@ -37,7 +37,9 @@ class ETexts {
   static const String iAgreeTo = "I Agree to the";
   static const String and = "and";
   static const String or = "or";
+  static const String done = "Done";
   static const String eContinue = "Continue";
+  static const String submit = "Submit";
   static const String termsOfUse = "Terms of Use";
   static const String privacyPolicy = "Privacy Policy";
   static const String verificationCode = "Verification Code";
