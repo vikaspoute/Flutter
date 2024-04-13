@@ -25,14 +25,14 @@ class PrimaryHeaderContainer extends StatelessWidget {
                 top: -150,
                 right: -250,
                 child: CircularContainer(
-                  color: EColors.textWhite.withOpacity(.1),
+                  backgroundColor: EColors.textWhite.withOpacity(.1),
                 ),
               ),
               Positioned(
                 top: 100,
                 right: -300,
                 child: CircularContainer(
-                  color: EColors.textWhite.withOpacity(.1),
+                  backgroundColor: EColors.textWhite.withOpacity(.1),
                 ),
               ),
               child,
