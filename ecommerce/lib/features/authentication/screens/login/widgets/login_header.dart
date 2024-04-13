@@ -1,4 +1,4 @@
-import 'package:ecommerce/utils/constants/images_strings.dart';
+import 'package:ecommerce/utils/constants/image_strings.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/constants/texts.dart';
 import 'package:ecommerce/utils/helpers/helper_functions.dart';
@@ -26,7 +26,7 @@ class LoginHeader extends StatelessWidget {
           ETexts.loginTitle,
           style: Theme.of(context).textTheme.headlineMedium,
         ),
-        const SizedBox(height: ESizes.sm),
+        const SizedBox(height: AppSizes.sm),
         Text(
           ETexts.loginSubTitle,
           style: Theme.of(context).textTheme.bodyMedium,

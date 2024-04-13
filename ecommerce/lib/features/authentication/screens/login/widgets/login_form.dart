@@ -16,7 +16,8 @@ class LoginForm extends StatelessWidget {
   Widget build(BuildContext context) {
     return Form(
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: ESizes.spaceSection),
+        padding:
+            const EdgeInsets.symmetric(vertical: AppSizes.spaceBtwSections),
         child: Column(
           children: [
             // Email
@@ -26,7 +27,7 @@ class LoginForm extends StatelessWidget {
                 prefixIcon: Icon(Iconsax.direct_right),
               ),
             ),
-            const SizedBox(height: ESizes.spaceBtwInputFields),
+            const SizedBox(height: AppSizes.spaceBtwInputFields),
             TextFormField(
               decoration: const InputDecoration(
                 labelText: ETexts.password,
@@ -34,7 +35,7 @@ class LoginForm extends StatelessWidget {
                 suffixIcon: Icon(Iconsax.eye_slash),
               ),
             ),
-            const SizedBox(height: ESizes.spaceBtwInputFields / 2),
+            const SizedBox(height: AppSizes.spaceBtwInputFields / 2),
 
             // Remember Me and Forget Password
             Row(
@@ -55,7 +56,7 @@ class LoginForm extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(height: ESizes.spaceSection),
+            const SizedBox(height: AppSizes.spaceBtwSections),
 
             // Sign In Button
             SizedBox(
@@ -67,7 +68,7 @@ class LoginForm extends StatelessWidget {
                 child: const Text(ETexts.signIn),
               ),
             ),
-            const SizedBox(height: ESizes.itemSpace),
+            const SizedBox(height: AppSizes.spaceBtwItems),
 
             // Create Account Button
             SizedBox(

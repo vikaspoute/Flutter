@@ -10,8 +10,8 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       themeMode: ThemeMode.system,
-      theme: AppTheme.lightTheme,
-      darkTheme: AppTheme.darkTheme,
+      theme: AppThemeData.lightTheme,
+      darkTheme: AppThemeData.darkTheme,
       debugShowCheckedModeBanner: false,
       home: const OnboardingScreen(),
     );

@@ -18,7 +18,7 @@ class CircularContainer extends StatelessWidget {
     this.radius = 400,
     this.padding = 0,
     this.margin,
-    this.backgroundColor = EColors.white,
+    this.backgroundColor = AppColors.white,
   });
 
   @override

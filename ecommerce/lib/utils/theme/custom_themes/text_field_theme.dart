@@ -4,8 +4,9 @@ import 'package:flutter/material.dart';
 class ETextFieldTheme {
   ETextFieldTheme._();
 
-  static const double _borderRadius = ESizes.fontSm;
-  static const TextStyle _defaultTextStyle = TextStyle(fontSize: ESizes.fontSm);
+  static const double _borderRadius = AppSizes.fontSm;
+  static const TextStyle _defaultTextStyle =
+      TextStyle(fontSize: AppSizes.fontSm);
 
   static InputDecorationTheme _buildInputDecorationTheme(
     TextStyle textStyle,

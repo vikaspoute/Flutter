@@ -1,6 +1,6 @@
 import 'package:ecommerce/common/widgets/success_screen/success_screen.dart';
 import 'package:ecommerce/features/authentication/screens/login/login.dart';
-import 'package:ecommerce/utils/constants/images_strings.dart';
+import 'package:ecommerce/utils/constants/image_strings.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/constants/texts.dart';
 import 'package:ecommerce/utils/helpers/helper_functions.dart';
@@ -25,7 +25,7 @@ class VerifyEmailScreen extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(ESizes.defaultSpace),
+          padding: const EdgeInsets.all(AppSizes.defaultSpace),
           child: Column(
             children: [
               /// image
@@ -33,7 +33,7 @@ class VerifyEmailScreen extends StatelessWidget {
                 image: const AssetImage(EImages.deliveredEmailIllustration),
                 width: HelperFunctions.screenWidth() * 0.6,
               ),
-              const SizedBox(height: ESizes.spaceSection),
+              const SizedBox(height: AppSizes.spaceBtwSections),
 
               /// title and subtitle
               Text(
@@ -41,19 +41,19 @@ class VerifyEmailScreen extends StatelessWidget {
                 style: Theme.of(context).textTheme.headlineMedium,
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: ESizes.itemSpace),
+              const SizedBox(height: AppSizes.spaceBtwItems),
               Text(
                 'support@codding.com',
                 style: Theme.of(context).textTheme.labelLarge,
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: ESizes.itemSpace),
+              const SizedBox(height: AppSizes.spaceBtwItems),
               Text(
                 ETexts.confirmEmailSubTitle,
                 style: Theme.of(context).textTheme.labelMedium,
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: ESizes.spaceSection),
+              const SizedBox(height: AppSizes.spaceBtwSections),
 
               ///Button
               SizedBox(
@@ -72,7 +72,7 @@ class VerifyEmailScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(height: ESizes.itemSpace),
+              const SizedBox(height: AppSizes.spaceBtwItems),
               SizedBox(
                 width: double.infinity,
                 child: TextButton(

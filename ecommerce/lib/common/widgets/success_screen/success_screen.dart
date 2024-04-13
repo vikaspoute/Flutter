@@ -39,7 +39,7 @@ class SuccessScreen extends StatelessWidget {
                 image: AssetImage(image),
                 width: HelperFunctions.screenWidth() * 0.6,
               ),
-              const SizedBox(height: ESizes.spaceSection),
+              const SizedBox(height: AppSizes.spaceBtwSections),
 
               /// title and subtitle
               Text(
@@ -47,13 +47,13 @@ class SuccessScreen extends StatelessWidget {
                 style: Theme.of(context).textTheme.headlineMedium,
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: ESizes.itemSpace),
+              const SizedBox(height: AppSizes.spaceBtwItems),
               Text(
                 subTitle,
                 style: Theme.of(context).textTheme.labelMedium,
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: ESizes.spaceSection),
+              const SizedBox(height: AppSizes.spaceBtwSections),
 
               ///Button
               SizedBox(

@@ -29,7 +29,7 @@ class CartCounterIcon extends StatelessWidget {
             width: 18,
             height: 18,
             decoration: BoxDecoration(
-              color: EColors.black,
+              color: AppColors.black,
               borderRadius: BorderRadius.circular(100),
             ),
             child: Center(
@@ -38,7 +38,7 @@ class CartCounterIcon extends StatelessWidget {
                 style: Theme.of(context)
                     .textTheme
                     .labelLarge!
-                    .apply(color: EColors.white, fontSizeFactor: 0.8),
+                    .apply(color: AppColors.white, fontSizeFactor: 0.8),
               ),
             ),
           ),

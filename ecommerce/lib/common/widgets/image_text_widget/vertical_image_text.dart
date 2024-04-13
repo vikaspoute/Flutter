@@ -13,8 +13,8 @@ class VerticalImageText extends StatelessWidget {
     super.key,
     required this.image,
     required this.title,
-    this.textColor = EColors.white,
-    this.backgroundColor = EColors.white,
+    this.textColor = AppColors.white,
+    this.backgroundColor = AppColors.white,
     this.onTap,
   });
 
@@ -25,28 +25,28 @@ class VerticalImageText extends StatelessWidget {
       onTap: onTap,
       child: Padding(
         padding: const EdgeInsets.only(
-          right: ESizes.itemSpace,
+          right: AppSizes.spaceBtwItems,
         ),
         child: Column(
           children: [
             Container(
               height: 56,
               width: 56,
-              padding: const EdgeInsets.all(ESizes.sm),
+              padding: const EdgeInsets.all(AppSizes.sm),
               decoration: BoxDecoration(
-                color:
-                    backgroundColor ?? (isDark ? EColors.dark : EColors.white),
+                color: backgroundColor ??
+                    (isDark ? AppColors.dark : AppColors.white),
                 borderRadius: BorderRadius.circular(100),
               ),
               child: Center(
                 child: Image.asset(
                   image,
                   fit: BoxFit.cover,
-                  color: isDark ? EColors.light : EColors.dark,
+                  color: isDark ? AppColors.light : AppColors.dark,
                 ),
               ),
             ),
-            const SizedBox(height: ESizes.itemSpace / 2),
+            const SizedBox(height: AppSizes.spaceBtwItems / 2),
             SizedBox(
               width: 55,
               child: Text(

@@ -19,16 +19,16 @@ class HomeAppBar extends StatelessWidget {
               style: Theme.of(context)
                   .textTheme
                   .labelMedium!
-                  .apply(color: EColors.grey)),
+                  .apply(color: AppColors.grey)),
           Text(ETexts.homeAppbarSubtitle,
               style: Theme.of(context)
                   .textTheme
                   .headlineSmall!
-                  .apply(color: EColors.grey)),
+                  .apply(color: AppColors.grey)),
         ],
       ),
       actions: [
-        CartCounterIcon(color: EColors.white, onPressed: () {}),
+        CartCounterIcon(color: AppColors.white, onPressed: () {}),
       ],
     );
   }

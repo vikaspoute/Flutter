@@ -16,14 +16,14 @@ class OnboardingNextButton extends StatelessWidget {
     final isDark = HelperFunctions.isDarkMode(context);
     return Positioned(
       bottom: DeviceUtils.getBottomNavigationBarHeight() + 25,
-      right: ESizes.defaultSpace,
+      right: AppSizes.defaultSpace,
       child: ElevatedButton(
         onPressed: () {
           OnboardingController.instance.nextPage();
         },
         style: ElevatedButton.styleFrom(
           shape: const CircleBorder(),
-          backgroundColor: isDark ? EColors.primary : Colors.black,
+          backgroundColor: isDark ? AppColors.primary : Colors.black,
         ),
         child: const Icon(Iconsax.arrow_right_3),
       ),

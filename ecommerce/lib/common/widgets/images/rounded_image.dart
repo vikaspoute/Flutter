@@ -24,9 +24,9 @@ class RoundedImage extends StatelessWidget {
     this.applyImageRadius = false,
     required this.imageUrl,
     this.fit = BoxFit.contain,
-    this.backgroundColor = EColors.light,
+    this.backgroundColor = AppColors.light,
     this.isNetworkImage = false,
-    this.borderRadius = ESizes.md,
+    this.borderRadius = AppSizes.md,
   });
 
   @override

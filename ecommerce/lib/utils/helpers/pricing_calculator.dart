@@ -1,39 +1,42 @@
-class PriceCalculator {
-  static Map<String, double> taxRates = {
-    'USA': 0.10,
-    'India': 0.18,
-  };
+class TPricingCalculator {
+  /// -- Calculate Price based on tax and shipping
+  static double calculateTotalPrice(double productPrice, String location) {
+    double taxRate = getTaxRateForLocation(location);
+    double taxAmount = productPrice * taxRate;
 
-  static Map<String, double> shippingCosts = {
-    'USA': 15.00,
-    'India': 20.00,
-  };
+    double shippingCost = getShippingCost(location);
 
-  static double calculateTotalPrice(double price, String country) {
-    double? taxRate = getTaxRateForCountry(country);
-    double taxAmount = price * taxRate!;
-
-    double? shippingCost = getShippingCost(country);
-
-    return price + taxAmount + shippingCost!;
+    double totalPrice = productPrice + taxAmount + shippingCost;
+    return totalPrice;
   }
 
-  static String? calculateShippingCost(double price, String country) {
-    double? shippingCost = getShippingCost(country);
-    return shippingCost?.toStringAsFixed(2);
+  /// -- Calculate shipping cost
+  static String calculateShippingCost(double productPrice, String location) {
+    double shippingCost = getShippingCost(location);
+    return shippingCost.toStringAsFixed(2);
   }
 
-  static String calculateTax(double price, String country) {
-    double? taxRate = getTaxRateForCountry(country);
-    double taxAmount = price * taxRate!;
+  /// -- Calculate tax
+  static String calculateTax(double productPrice, String location) {
+    double taxRate = getTaxRateForLocation(location);
+    double taxAmount = productPrice * taxRate;
     return taxAmount.toStringAsFixed(2);
   }
 
-  static double? getTaxRateForCountry(String country) {
-    return taxRates.containsKey(country) ? taxRates[country] : 0.0;
+  static double getTaxRateForLocation(String location) {
+    // Lookup the tax rate for the given location from a tax rate database or API.
+    // Return the appropriate tax rate.
+    return 0.10; // Example tax rate of 10%
   }
 
-  static double? getShippingCost(String country) {
-    return shippingCosts.containsKey(country) ? shippingCosts[country] : 0.0;
+  static double getShippingCost(String location) {
+    // Lookup the shipping cost for the given location using a shipping rate API.
+    // Calculate the shipping cost based on various factors like distance, weight, etc.
+    return 5.00; // Example shipping cost of $5
   }
+
+  /// -- Sum all cart values and return total amount
+  /*static double calculateCartTotal(CartModel cart) {
+    return cart.items.map((e) => e.price).fold(0, (previousPrice, currentPrice) => previousPrice + (currentPrice ?? 0));
+  }*/
 }

@@ -1,5 +1,5 @@
 import 'package:ecommerce/utils/constants/colors.dart';
-import 'package:ecommerce/utils/constants/images_strings.dart';
+import 'package:ecommerce/utils/constants/image_strings.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
@@ -15,29 +15,29 @@ class SocialButtons extends StatelessWidget {
       children: [
         Container(
           decoration: BoxDecoration(
-            border: Border.all(color: EColors.grey),
+            border: Border.all(color: AppColors.grey),
             borderRadius: BorderRadius.circular(100),
           ),
           child: IconButton(
             onPressed: () {},
             icon: const Image(
-              width: ESizes.iconMd,
-              height: ESizes.iconMd,
+              width: AppSizes.iconMd,
+              height: AppSizes.iconMd,
               image: AssetImage(EImages.google),
             ),
           ),
         ),
-        const SizedBox(width: ESizes.itemSpace),
+        const SizedBox(width: AppSizes.spaceBtwItems),
         Container(
           decoration: BoxDecoration(
-            border: Border.all(color: EColors.grey),
+            border: Border.all(color: AppColors.grey),
             borderRadius: BorderRadius.circular(100),
           ),
           child: IconButton(
             onPressed: () {},
             icon: const Image(
-              width: ESizes.iconMd,
-              height: ESizes.iconMd,
+              width: AppSizes.iconMd,
+              height: AppSizes.iconMd,
               image: AssetImage(EImages.facebook),
             ),
           ),

@@ -26,7 +26,7 @@ class LoginScreen extends StatelessWidget {
 
               // Divider
               FormDivider(dividerText: ETexts.orSignInWIth),
-              SizedBox(height: ESizes.spaceSection),
+              SizedBox(height: AppSizes.spaceBtwSections),
               // Social Login Buttons
               SocialButtons(),
             ],

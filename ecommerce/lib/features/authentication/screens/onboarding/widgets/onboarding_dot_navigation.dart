@@ -17,13 +17,13 @@ class OnboardingDotNavigation extends StatelessWidget {
     final isDark = HelperFunctions.isDarkMode(context);
     return Positioned(
       bottom: DeviceUtils.getBottomNavigationBarHeight() + 25,
-      left: ESizes.defaultSpace,
+      left: AppSizes.defaultSpace,
       child: SmoothPageIndicator(
         controller: controller.pageController,
         onDotClicked: controller.dotNavigationClick,
         count: 3,
         effect: ExpandingDotsEffect(
-          activeDotColor: isDark ? EColors.light : EColors.dark,
+          activeDotColor: isDark ? AppColors.light : AppColors.dark,
           dotHeight: 10,
         ),
       ),

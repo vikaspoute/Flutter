@@ -1,10 +1,11 @@
 import 'package:ecommerce/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:ecommerce/common/widgets/custom_shapes/containers/search_container.dart';
+import 'package:ecommerce/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:ecommerce/common/widgets/texts/section_heading_title.dart';
 import 'package:ecommerce/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:ecommerce/features/shop/screens/home/widgets/promo_slider.dart';
 import 'package:ecommerce/utils/constants/colors.dart';
-import 'package:ecommerce/utils/constants/images_strings.dart';
+import 'package:ecommerce/utils/constants/image_strings.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
@@ -24,21 +25,21 @@ class HomeScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   HomeAppBar(),
-                  SizedBox(height: ESizes.spaceSection),
+                  SizedBox(height: AppSizes.spaceBtwSections),
                   SearchContainer(
                     text: 'Search in store',
                   ),
-                  SizedBox(height: ESizes.spaceSection),
+                  SizedBox(height: AppSizes.spaceBtwSections),
                   Padding(
-                    padding: EdgeInsets.only(left: ESizes.defaultSpace),
+                    padding: EdgeInsets.only(left: AppSizes.defaultSpace),
                     child: Column(
                       children: [
                         SectionHeading(
                           title: 'Popular Categories',
-                          textColor: EColors.white,
+                          textColor: AppColors.white,
                           showActionButton: false,
                         ),
-                        SizedBox(height: ESizes.itemSpace),
+                        SizedBox(height: AppSizes.spaceBtwItems),
                         HomeCategories()
                       ],
                     ),
@@ -47,16 +48,21 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: EdgeInsets.all(ESizes.defaultSpace),
+              padding: EdgeInsets.all(AppSizes.defaultSpace),
               child: Column(
                 children: [
                   PromoSlider(
                     banners: [
-                      EImages.promoBanner1,
-                      EImages.promoBanner2,
-                      EImages.promoBanner3
+                      EImages.banner1,
+                      EImages.banner2,
+                      EImages.banner3,
+                      EImages.banner4,
+                      EImages.banner5,
+                      EImages.banner6,
                     ],
                   ),
+                  SizedBox(height: AppSizes.spaceBtwSections),
+                  ProductCardVertical(),
                 ],
               ),
             ),

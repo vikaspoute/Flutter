@@ -35,19 +35,19 @@ class PromoSlider extends StatelessWidget {
                   ),
                 )
                 .toList()),
-        const SizedBox(height: ESizes.itemSpace),
+        const SizedBox(height: AppSizes.spaceBtwItems),
         Obx(
           () => Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              for (int i = 0; i < 3; i++)
+              for (int i = 0; i < 6; i++)
                 CircularContainer(
                   width: 20,
                   height: 5,
                   margin: const EdgeInsets.only(right: 10),
                   backgroundColor: controller.carousalCurrentIndex.value == i
-                      ? EColors.primary
-                      : EColors.grey,
+                      ? AppColors.primary
+                      : AppColors.grey,
                 ),
             ],
           ),

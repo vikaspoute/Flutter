@@ -18,7 +18,8 @@ class SignupForm extends StatelessWidget {
     final isDark = HelperFunctions.isDarkMode(context);
     return Form(
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: ESizes.spaceSection),
+        padding:
+            const EdgeInsets.symmetric(vertical: AppSizes.spaceBtwSections),
         child: Column(
           children: [
             // first and last name
@@ -32,7 +33,7 @@ class SignupForm extends StatelessWidget {
                     ),
                   ),
                 ),
-                const SizedBox(width: ESizes.spaceBtwInputFields),
+                const SizedBox(width: AppSizes.spaceBtwInputFields),
                 Flexible(
                   child: TextFormField(
                     decoration: const InputDecoration(
@@ -43,7 +44,7 @@ class SignupForm extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(height: ESizes.spaceBtwInputFields),
+            const SizedBox(height: AppSizes.spaceBtwInputFields),
 
             /// username
             TextFormField(
@@ -52,7 +53,7 @@ class SignupForm extends StatelessWidget {
                 prefixIcon: Icon(Iconsax.user_edit),
               ),
             ),
-            const SizedBox(height: ESizes.spaceBtwInputFields),
+            const SizedBox(height: AppSizes.spaceBtwInputFields),
 
             ///email
             TextFormField(
@@ -61,7 +62,7 @@ class SignupForm extends StatelessWidget {
                 prefixIcon: Icon(Iconsax.direct),
               ),
             ),
-            const SizedBox(height: ESizes.spaceBtwInputFields),
+            const SizedBox(height: AppSizes.spaceBtwInputFields),
 
             /// phone number
             TextFormField(
@@ -70,7 +71,7 @@ class SignupForm extends StatelessWidget {
                 prefixIcon: Icon(Iconsax.call),
               ),
             ),
-            const SizedBox(height: ESizes.spaceBtwInputFields),
+            const SizedBox(height: AppSizes.spaceBtwInputFields),
             TextFormField(
               decoration: const InputDecoration(
                 labelText: ETexts.password,
@@ -78,7 +79,7 @@ class SignupForm extends StatelessWidget {
                 suffixIcon: Icon(Iconsax.eye_slash),
               ),
             ),
-            const SizedBox(height: ESizes.spaceBtwInputFields),
+            const SizedBox(height: AppSizes.spaceBtwInputFields),
 
             // Terms and conditions
             Row(
@@ -95,7 +96,7 @@ class SignupForm extends StatelessWidget {
                         onChanged: (value) {},
                       ),
                     ),
-                    const SizedBox(width: ESizes.itemSpace),
+                    const SizedBox(width: AppSizes.spaceBtwItems),
                     Text.rich(
                       TextSpan(
                         children: [
@@ -110,10 +111,10 @@ class SignupForm extends StatelessWidget {
                                 .bodyMedium!
                                 .apply(
                                   color:
-                                      isDark ? Colors.white : EColors.primary,
+                                      isDark ? Colors.white : AppColors.primary,
                                   decoration: TextDecoration.underline,
                                   decorationColor:
-                                      isDark ? Colors.white : EColors.primary,
+                                      isDark ? Colors.white : AppColors.primary,
                                 ),
                           ),
                           TextSpan(
@@ -127,10 +128,10 @@ class SignupForm extends StatelessWidget {
                                 .bodyMedium!
                                 .apply(
                                   color:
-                                      isDark ? Colors.white : EColors.primary,
+                                      isDark ? Colors.white : AppColors.primary,
                                   decoration: TextDecoration.underline,
                                   decorationColor:
-                                      isDark ? Colors.white : EColors.primary,
+                                      isDark ? Colors.white : AppColors.primary,
                                 ),
                           ),
                         ],
@@ -140,7 +141,7 @@ class SignupForm extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(height: ESizes.spaceSection),
+            const SizedBox(height: AppSizes.spaceBtwSections),
 
             // Sign In Button
             SizedBox(
@@ -152,7 +153,7 @@ class SignupForm extends StatelessWidget {
                 child: const Text(ETexts.createAccount),
               ),
             ),
-            const SizedBox(height: ESizes.itemSpace),
+            const SizedBox(height: AppSizes.spaceBtwItems),
 
             // Create Account Button
             SizedBox(
